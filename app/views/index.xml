@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<View layout="vertical" height="Ti.UI.SIZE">
+			<Label id="label1" onClick="doClick1">Try $model</Label>
+			<Label id="label2" onClick="doClick2">Try $.model</Label>
+		</View>
+	</Window>
+</Alloy>

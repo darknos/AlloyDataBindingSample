@@ -1,0 +1,21 @@
+<Alloy>
+	<Model id="model" src="Person" instance="true"/>
+<Window backgroundColor="white" id="root" onOpen="open">
+    <View layout="vertical" height="Ti.UI.SIZE">
+        <View layout="horizontal" height="Ti.UI.SIZE">
+            <Label class="caption">First Name</Label>
+            <TextField left=20 value="{$.model.firstName}"/>
+        </View>
+        <View layout="horizontal" top=20  height="Ti.UI.SIZE">
+            <Label class="caption">Last Name</Label>
+            <TextField left=20  value="{$.model.lastName}"/>
+        </View>
+		<View  height="Ti.UI.SIZE">
+			<Button onClick="changeName" title="Change Name"/>
+		</View>
+		<View  height="Ti.UI.SIZE">
+			<Button onClick="close" title="Close"/>
+		</View>
+    </View>
+</Window>
+</Alloy>

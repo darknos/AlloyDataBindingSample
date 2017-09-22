@@ -1,0 +1,20 @@
+<Alloy>
+<Window backgroundColor="white" id="root">
+    <View layout="vertical" height="Ti.UI.SIZE">
+        <View layout="horizontal" height="Ti.UI.SIZE">
+            <Label class="caption">First Name</Label>
+            <TextField left=20 value="{firstName}"/>
+        </View>
+        <View layout="horizontal" top=20  height="Ti.UI.SIZE">
+            <Label class="caption">Last Name</Label>
+            <TextField left=20  value="{lastName}"/>
+        </View>
+		<View  height="Ti.UI.SIZE">
+			<Button onClick="changeName" title="Change Name"/>
+		</View>
+		<View  height="Ti.UI.SIZE">
+			<Button onClick="close" title="Close"/>
+		</View>
+    </View>
+</Window>
+</Alloy>
